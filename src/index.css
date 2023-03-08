@@ -21,6 +21,15 @@ button {
     cursor: pointer;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .app {
     margin: 2.8rem 2.1rem 0;
 }
