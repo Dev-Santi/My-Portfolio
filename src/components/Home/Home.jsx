@@ -15,9 +15,9 @@ const Home = () => {
         <br />
         <br />
         Here you will be able to see information{" "}
-        <NavLink to="/about-me">about me</NavLink>,{" "}
-        <NavLink to="/proyects">my projects</NavLink> and how we can{" "}
-        <NavLink to="/contact">get in touch</NavLink>
+        <NavLink to="/My-Portfolio/about-me">about me</NavLink>,{" "}
+        <NavLink to="/My-Portfolio/proyects">my projects</NavLink> and how we
+        can <NavLink to="/My-Portfolio/contact">get in touch</NavLink>
       </p>
       <div className="imgContainer">
         <img

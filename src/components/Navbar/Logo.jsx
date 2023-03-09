@@ -4,7 +4,7 @@ const Logo = () => {
   let location = useLocation();
   let pathname = location.pathname;
   return (
-    <NavLink to={"/home"}>
+    <NavLink to={"/My-Portfolio/"}>
       <div className="logo">
         <div className="bar" />
         <div className="text">
