@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 1.5rem;
+    overflow: hidden;
 }
 
 /* Logo */
@@ -86,7 +87,8 @@
 .menuList {
     text-align: end;
     padding: 3rem 0;
-    transform: translateY(-40rem);
+    transform: translateY(-33rem);
+    opacity: 0;
     height: 0;
     transition: 1s;
 }
@@ -94,6 +96,7 @@
 .menuList.active {
     transform: translateY(0);
     height: 25rem;
+    opacity: 1;
 }
 
 .menuList li {

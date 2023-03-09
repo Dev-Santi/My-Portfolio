@@ -5,16 +5,16 @@ const MenuList = ({ isActive }) => {
     <div>
       <ul className={isActive ? "menuList active" : "menuList"}>
         <li>
-          <NavLink to="/a">HOME</NavLink>
+          <NavLink to="/home">HOME</NavLink>
         </li>
         <li>
-          <NavLink to="/b">PROYECTS</NavLink>
+          <NavLink to="/proyects">PROYECTS</NavLink>
         </li>
         <li>
-          <NavLink to="/c">ABOUT ME</NavLink>
+          <NavLink to="/about-me">ABOUT ME</NavLink>
         </li>
         <li>
-          <NavLink to="/d">CONTACT</NavLink>
+          <NavLink to="/contact">CONTACT</NavLink>
         </li>
       </ul>
     </div>
