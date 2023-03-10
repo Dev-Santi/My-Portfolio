@@ -14,10 +14,6 @@
     grid-area: img;
 }
 
-#home-footer {
-    grid-area: footer;
-}
-
 .home span:nth-child(1) {
     color: #FF37B3;
 }
@@ -64,8 +60,7 @@
         display: grid;
         grid-template-areas:
             "title title"
-            "pg img"
-            "footer footer";
+            "pg img";
     }
 }
 

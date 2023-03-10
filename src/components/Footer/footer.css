@@ -1,17 +1,34 @@
 #home-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
     margin: 0 auto;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.802);
-    border-top-right-radius: 10rem;
+    border-top-right-radius: 2rem;
     background-color: #17082b;
-    border-top-left-radius: 10rem;
-    width: 75%;
+    border-top-left-radius: 2rem;
+    width: 100%;
     height: 8rem;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #ffffff21;
+    overflow: hidden;
 }
 
 #home-footer svg {
     margin: 0 1rem;
+}
+
+@media (min-width: 37rem) {
+    #home-footer {
+        font-size: 5rem;
+        border-top-right-radius: 10rem;
+        border-top-left-radius: 10rem;
+        width: 70%;
+    }
+
+    #home-footer svg {
+        font-size: 4rem;
+    }
 }
