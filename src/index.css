@@ -13,6 +13,7 @@
 
 :root {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 button {
@@ -31,10 +32,22 @@ a {
 }
 
 h1 {
-    font-size: clamp(2.8rem, 12vw, 6rem);
+    font-size: clamp(2.8rem, 12vw, 7rem);
     font-style: italic;
+    position: relative;
 }
 
 .app {
     margin: 2.8rem 2.1rem 0;
+}
+
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
 }

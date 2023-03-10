@@ -1,0 +1,8 @@
+.proyects {
+    text-align: center;
+}
+
+.proyects .title :nth-child(1) {
+    display: flex;
+    justify-content: center;
+}

@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 1.5rem;
-    overflow: hidden;
 }
 
 /* Logo */
@@ -12,7 +11,6 @@
     display: flex;
     position: relative;
     align-items: center;
-    overflow: hidden;
     cursor: pointer;
 }
 
@@ -61,25 +59,25 @@
     width: 5rem;
     margin: 0.4rem 0;
     height: 0.3rem;
-    transition: 1.2s;
+    transition: 1.2s ease-in-out;
     background-color: #78737E;
 }
 
-.menuBtn .bar:nth-child(2) {
+.menuBtn .bar:nth-child(3) {
     background-color: #FF37B3;
     width: 6rem;
     transition: 0.3s;
 }
 
-.menuBtn .bar:nth-child(1).active {
+.menuBtn .bar:nth-child(2).active {
     transform: translateY(1.1rem) rotate(45deg);
 }
 
-.menuBtn .bar:nth-child(2).active {
+.menuBtn .bar:nth-child(3).active {
     transform: translatex(15rem);
 }
 
-.menuBtn .bar:nth-child(3).active {
+.menuBtn .bar:nth-child(4).active {
     transform: translateY(-1.1rem) rotate(-45deg);
 }
 

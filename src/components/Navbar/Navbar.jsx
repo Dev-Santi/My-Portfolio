@@ -26,6 +26,7 @@ const Navbar = () => {
               : "menuBtn closed"
           }
         >
+          <span className="visually-hidden">menu</span>
           <span className={isActive ? "bar active" : "bar"}></span>
           <span className={isActive ? "bar active" : "bar"}></span>
           <span className={isActive ? "bar active" : "bar"}></span>
