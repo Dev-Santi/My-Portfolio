@@ -2,20 +2,20 @@
     text-align: center;
 }
 
-#index-title {
+#home-title {
     grid-area: title;
 }
 
-#index-pg {
+#home-paragraph {
     grid-area: pg;
 }
 
-#index-img {
+#home-img {
     grid-area: img;
 }
 
-#bar {
-    grid-area: bar;
+#home-footer {
+    grid-area: footer;
 }
 
 .home span:nth-child(1) {
@@ -65,7 +65,7 @@
         grid-template-areas:
             "title title"
             "pg img"
-            "bar bar";
+            "footer footer";
     }
 }
 
@@ -76,16 +76,6 @@
 
     .home .imgContainer :nth-child(2) {
         display: block;
-    }
-
-    .home .bar {
-        margin: 0 auto;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.802);
-        background: linear-gradient(0deg, #ff37b29e 0%, #763bc38c 100%);
-        border-top-right-radius: 10rem;
-        border-top-left-radius: 10rem;
-        width: 75%;
-        height: 12rem;
     }
 
     .home p {
