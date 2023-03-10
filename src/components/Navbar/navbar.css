@@ -11,13 +11,12 @@
     display: flex;
     position: relative;
     align-items: center;
-    cursor: pointer;
 }
 
 .logo .bar {
     background-color: #FF37B3;
     position: absolute;
-    width: 0.2rem;
+    width: 0.1rem;
     height: 10rem;
 }
 
@@ -74,7 +73,7 @@
 }
 
 .menuBtn .bar:nth-child(3).active {
-    transform: translatex(15rem);
+    transform: translatex(40rem);
 }
 
 .menuBtn .bar:nth-child(4).active {
@@ -109,6 +108,64 @@
 
 .menuList li a.active {
     color: #777777;
+}
+
+/* medias */
+@media(min-width: 39rem) {
+    .logo .text :nth-child(1) {
+        max-width: none;
+    }
+
+    .logo .bar {
+        height: 7rem;
+    }
+}
+
+@media(min-width: 65rem) {
+    .menuList a {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+
+    .menuList {
+        display: flex;
+        transform: none;
+        opacity: 1;
+        height: auto;
+    }
+
+    .menuList a.active .bar {
+        display: none;
+    }
+
+    .menuList a .bar {
+        display: inline-block;
+        height: 2.5rem;
+        width: 0.2rem;
+        margin-right: 0.5rem;
+        background-color: #FF37B3;
+    }
+
+    menu .menuList.active {
+        transform: none;
+        opacity: 1;
+        height: auto;
+    }
+
+    .menuList li+li {
+        margin-top: auto;
+        margin-left: 4rem;
+    }
 }
 
 /* Animations */

@@ -13,7 +13,6 @@
 
 :root {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 button {
@@ -38,7 +37,8 @@ h1 {
 }
 
 .app {
-    margin: 2.8rem 2.1rem 0;
+    padding: 2.8rem 2.1rem 0;
+    min-height: 100dvh;
 }
 
 .visually-hidden {
@@ -50,4 +50,27 @@ h1 {
     overflow: hidden;
     padding: 0;
     position: absolute;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(172, 88, 255, 0.27) 100%);
+    overflow: hidden;
+}
+
+@media(min-width: 39rem) {
+    h1 {
+        font-size: 5.3rem;
+    }
+}
+
+@media(min-width: 50rem) {
+    .app {
+        padding: 3.2rem 11.2rem 0;
+    }
+}
+
+@media(min-width: 80rem) {
+    h1 {
+        font-size: 8.4rem;
+    }
 }

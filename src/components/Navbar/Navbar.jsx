@@ -17,6 +17,7 @@ const Navbar = () => {
       <div className="navbar">
         <Logo />
         <button
+          type="button"
           onClick={handleActive}
           className={
             firstTime
