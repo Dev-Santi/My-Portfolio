@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1 id="home-title">
-        IF YOU CAN <span>DESIGN IT</span>
+        IF CAN BE <span>DESIGNED</span>
         <br />I CAN <span>PROGRAM IT</span>
       </h1>
       <p id="home-paragraph">

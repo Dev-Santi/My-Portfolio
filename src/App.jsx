@@ -9,15 +9,12 @@ function App() {
   const isHome = path === "/My-Portfolio/";
   return (
     <div className={isHome ? "app gradient" : "app"}>
-      <div className=""></div>
       <Navbar />
       <Routes>
         <Route path="/My-Portfolio/" element={<Home />} />
         <Route path="/My-Portfolio/proyects/" element={<Proyects />} />
       </Routes>
-      <div className="space-between">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

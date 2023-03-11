@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer id="home-footer">
       {"< "}
-      <IconContext.Provider value={{ color: "white", size: "4rem" }}>
+      <IconContext.Provider value={{}}>
         <a href="mailto:bauzalarrosasantiago@correo.com" target="_blank">
           <AiOutlineMail />
         </a>

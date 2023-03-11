@@ -6,7 +6,7 @@ const MenuList = ({ isActive }) => {
       <ul className={isActive ? "menuList active" : "menuList"}>
         <li>
           <NavLink to="/My-Portfolio/">
-            <span className="bar"></span>HOME
+            <span className="bar bar-short"></span>HOME
           </NavLink>
         </li>
         <li>

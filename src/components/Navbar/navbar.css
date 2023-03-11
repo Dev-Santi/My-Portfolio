@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 1.5rem;
 }
 
 /* Logo */
@@ -90,6 +89,11 @@
     transition: 1s;
 }
 
+.menuList li span {
+    position: absolute;
+    transform: translateX(-1rem);
+}
+
 .menuList.active {
     transform: translateY(0);
     height: 25rem;
@@ -108,6 +112,7 @@
 
 .menuList li a.active {
     color: #777777;
+    cursor: default;
 }
 
 /* medias */
@@ -119,12 +124,37 @@
     .logo .bar {
         height: 7rem;
     }
+
+    .logo:hover .bar {
+        transform: scale(1.1);
+        animation: logoHover 0.5s ease-in-out forwards;
+    }
+
+    .logo:hover {
+        color: #FF37B3;
+    }
+
+    .logo:hover .text :nth-child(2) {
+        color: #FF37B3;
+    }
 }
 
 @media(min-width: 65rem) {
     .menuList a {
         display: flex;
         align-items: center;
+    }
+
+    .menuList li:hover {
+        color: #FF37B3;
+    }
+
+    .menuList li:hover span {
+        animation: menuItemHover 0.3s ease-in-out forwards;
+    }
+
+    .menuList li:hover .bar-short {
+        animation: menuItemHoverShort 0.3s ease-in-out forwards;
     }
 
     nav {
@@ -193,4 +223,61 @@
     }
 }
 
-@keyframes btnClosed {}
+@keyframes logoHover {
+    0% {}
+
+    50% {
+        height: 2px;
+        transform: translateY(4rem);
+    }
+
+    90% {
+        transform: translateY(4rem) rotate(-90deg);
+        height: 2px;
+    }
+
+    100% {
+        transform: translateY(4rem) rotate(-90deg) translateY(14.2rem);
+        height: 27.5rem;
+        background-color: #ff009d;
+        width: 1px;
+    }
+}
+
+@keyframes menuItemHover {
+    0% {}
+
+    50% {
+        height: 2px;
+        transform: translateY(1.3rem);
+    }
+
+    90% {
+        transform: translateY(1.3rem) rotate(-90deg);
+        height: 2px;
+    }
+
+    100% {
+        transform: translateY(1.3rem) rotate(-90deg) translateY(5.2rem);
+        height: 11rem;
+    }
+}
+
+@keyframes menuItemHoverShort {
+    0% {}
+
+    50% {
+        height: 2px;
+        transform: translateY(1.3rem);
+    }
+
+    90% {
+        transform: translateY(1.3rem) rotate(-90deg);
+        height: 2px;
+    }
+
+    100% {
+        transform: translateY(1.3rem) rotate(-90deg) translateY(3rem);
+        height: 6.5rem;
+    }
+}
